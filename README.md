@@ -6,7 +6,7 @@ This project is heavily inspired by :dog: [husky](https://github.com/typicode/hu
 
 ## What can I do?
 
-You can run commands each time you save file
+You can run commands each time you save a file
 
 #### Why?
 
