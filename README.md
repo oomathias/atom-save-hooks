@@ -100,7 +100,7 @@ Global config is available in atom settings, you can override the config for eac
 
 | Option        | Default | Description                                                                                                                                                 |
 | ------------- | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `showError`   | `false` | Capture stderr and displays a notification for each command executed                                                                                        |
+| `showError`   | `true` | Capture stderr and displays a notification for each command executed                                                                                        |
 | `showOutput`  | `false` | Capture stdout and displays a notification for each command executed                                                                                        |
 | `timeout`     | `60000` | Timeout (in milliseconds) after which the command is killed                                                                                                 |
 | `preferLocal` | `true`  | Prefer locally installed binaries when looking for a binary to execute. <br> If you `npm install prettier`, you can then call `prettier` directly           |
