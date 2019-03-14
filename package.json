@@ -1,7 +1,7 @@
 {
   "name": "save-hooks",
   "main": "./lib/index.js",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Mathias Beugnon <mathias@beugnon.fr>",
   "description": "Atom save hooks made easy",
   "repository": "https://github.com/oomathias/atom-save-hooks",
