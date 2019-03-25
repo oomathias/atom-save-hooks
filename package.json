@@ -63,7 +63,7 @@
   },
   "dependencies": {
     "atom-package-deps": "^5.0.0",
-    "cosmiconfig": "^5.1.0",
+    "cosmiconfig": "^5.2.0",
     "debug": "^4.1.1",
     "execa": "^1.0.0",
     "is-glob": "^4.0.0",
