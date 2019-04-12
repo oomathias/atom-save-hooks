@@ -2,7 +2,7 @@
 
 > Atom save hooks made easy
 
-This project is heavily inspired by :dog: [husky](https://github.com/typicode/husky)
+This project is heavily inspired by [lint-staged](https://github.com/okonet/lint-staged)
 
 ## What can I do?
 
@@ -48,7 +48,7 @@ Globs aka `**/*.js` must respect [micromatch](https://github.com/micromatch/micr
 ```json
 {
   "on-save": {
-    "***/.js": ["import-sort --write"],
+    "**/*.js": ["import-sort --write"],
     "**/*.{{c,le,sc}ss,g?(raph)ql,htm?(l),js?(on|on5|onl|x|s),md?(x|wn),m?(ark)down,mkdn,ts?(x),vue,y?(a)ml}": [
       "prettier --write"
     ]
