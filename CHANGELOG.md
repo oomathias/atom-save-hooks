@@ -2,6 +2,12 @@
 
 ## [Unreleased]
 
+## [1.0.1] - 2019-04-12
+
+### Changed
+
+- glob doest not match base by default (`*.js` was equivalent to `**/*.js`)
+
 ## [1.0.0] - 2019-04-12
 
 ### Changed
@@ -38,7 +44,8 @@
 
 - Initial save-hooks
 
-[unreleased]: https://github.com/oomathias/atom-save-hooks/compare/v0.1.0.0...master
+[unreleased]: https://github.com/oomathias/atom-save-hooks/compare/v1.0.1...master
+[1.0.1]: https://github.com/oomathias/atom-save-hooks/releases/tag/v1.0.1
 [1.0.0]: https://github.com/oomathias/atom-save-hooks/releases/tag/v1.0.0
 [0.1.1]: https://github.com/oomathias/atom-save-hooks/releases/tag/v0.1.1
 [0.1.0]: https://github.com/oomathias/atom-save-hooks/releases/tag/v0.1.0

@@ -65,11 +65,11 @@
       "style": "renke"
     }
   },
-  "on-savex": {
-    "*.js": [
+  "on-save": {
+    "**/*.js": [
       "import-sort --write"
     ],
-    "*.{{c,le,sc}ss,g?(raph)ql,htm?(l),js?(on|on5|onl|x|s),md?(x|wn),m?(ark)down,mkdn,ts?(x),vue,y?(a)ml}": [
+    "**/*.xx{{c,le,sc}ss,g?(raph)ql,htm?(l),js?(on|on5|onl|x|s),md?(x|wn),m?(ark)down,mkdn,ts?(x),vue,y?(a)ml}": [
       "prettier --write"
     ]
   },

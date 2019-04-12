@@ -41,15 +41,15 @@ apm install save-hooks
 
 All defined tasks will run regardless of the exit code
 
-Globs aka `*.js` must respect [micromatch](https://github.com/micromatch/micromatch) format.
+Globs aka `**/*.js` must respect [micromatch](https://github.com/micromatch/micromatch) format.
 
 ##### package.json
 
 ```json
 {
   "on-save": {
-    "*.js": ["import-sort --write"],
-    "*.{{c,le,sc}ss,g?(raph)ql,htm?(l),js?(on|on5|onl|x|s),md?(x|wn),m?(ark)down,mkdn,ts?(x),vue,y?(a)ml}": [
+    "***/.js": ["import-sort --write"],
+    "**/*.{{c,le,sc}ss,g?(raph)ql,htm?(l),js?(on|on5|onl|x|s),md?(x|wn),m?(ark)down,mkdn,ts?(x),vue,y?(a)ml}": [
       "prettier --write"
     ]
   }
@@ -60,7 +60,7 @@ Globs aka `*.js` must respect [micromatch](https://github.com/micromatch/microma
 
 ```js
 module.exports = {
-  '*.{{c,le,sc}ss,g?(raph)ql,htm?(l),js?(on|on5|onl|x|s),md?(x|wn),m?(ark)down,mkdn,ts?(x),vue,y?(a)ml}': [
+  '**/*.{{c,le,sc}ss,g?(raph)ql,htm?(l),js?(on|on5|onl|x|s),md?(x|wn),m?(ark)down,mkdn,ts?(x),vue,y?(a)ml}': [
     'prettier --write',
   ],
 }

@@ -1,5 +1,5 @@
 module.exports = {
-  '*.js': [
+  '**/*.js': [
     {
       cmd: ['import-sort --write', 'prettier --write'],
       showOutput: true,
