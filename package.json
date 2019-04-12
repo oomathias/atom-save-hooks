@@ -65,12 +65,11 @@
   },
   "dependencies": {
     "atom-package-deps": "^5.0.0",
-    "cosmiconfig": "^5.1.0",
+    "cosmiconfig": "^5.2.0",
     "debug": "^4.1.1",
     "execa": "^1.0.0",
-    "is-glob": "^4.0.0",
     "lodash.debounce": "^4.0.8",
-    "micromatch": "^3.1.10",
+    "micromatch": "^4.0.1",
     "string-argv": "^0.1.2"
   },
   "devDependencies": {
