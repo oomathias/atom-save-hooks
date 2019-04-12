@@ -55,10 +55,12 @@
       "style": "renke"
     }
   },
-  "atom-save-hooks": {
+  "on-save": {
     "*.js": [
-      "import-sort --write",
-      "prettier --fix"
+      "import-sort --write"
+    ],
+    "*.(md|js|json)": [
+      "prettier --write"
     ]
   },
   "dependencies": {

@@ -35,9 +35,9 @@ apm install save-hooks
 
 `save-hooks` will recognize:
 
-- a `atom-save-hooks` property in `package.json`
-- a `.atomsavehooksrc` file in JSON or YAML format
-- a `atom-save-hooks.config.js` file exporting a JS object
+- a `on-save` property in `package.json`
+- a `.onsaverc` file in JSON or YAML format
+- a `on-save.config.js` file exporting a JS object
 
 All defined tasks will run regardless of the exit code
 
@@ -47,17 +47,18 @@ Globs aka `*.js` must respect [micromatch](https://github.com/micromatch/microma
 
 ```json
 {
-  "atom-save-hooks": {
-    "*.js": ["standard --fix"]
+  "on-save": {
+    "*.js": ["import-sort --write"],
+    "*.(md|js|json)": ["prettier --write"]
   }
 }
 ```
 
-##### atom-save-hooks.config.js
+##### on-save.config.js
 
 ```js
 module.exports = {
-  '*.js': ['standard --fix'],
+  '*.js': ['prettier --write'],
 }
 ```
 
@@ -65,7 +66,7 @@ module.exports = {
 
 ```json
 {
-  "atom-save-hooks": {
+  "on-save": {
     "lib1/*.js": "echo {name} {file} {ext} {path} {dir} {root} {absolute} {absoluteDir}",
     "lib2/*.js": ["sleep 1", "sleep 2"],
     "lib3/*.js": {
@@ -98,20 +99,20 @@ module.exports = {
 
 Global config is available in atom settings, you can override the config for each task defined.
 
-| Option        | Default | Description                                                                                                                                                 |
-| ------------- | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `showError`   | `true` | Capture stderr and displays a notification for each command executed                                                                                        |
-| `showOutput`  | `false` | Capture stdout and displays a notification for each command executed                                                                                        |
-| `timeout`     | `60000` | Timeout (in milliseconds) after which the command is killed                                                                                                 |
-| `preferLocal` | `true`  | Prefer locally installed binaries when looking for a binary to execute. <br> If you `npm install prettier`, you can then call `prettier` directly           |
-| `appendFile`  | `true`  | Append file saved to each command. <br> If you use `standard --fix` and save the file `/dir/savedfile.js`, it will call `standard --fix /dir/savedfile.js` |
+| Option        | Default | Description                                                                                                                                                    |
+| ------------- | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `showError`   | `true`  | Capture stderr and displays a notification for each command executed                                                                                           |
+| `showOutput`  | `false` | Capture stdout and displays a notification for each command executed                                                                                           |
+| `timeout`     | `60000` | Timeout (in milliseconds) after which the command is killed                                                                                                    |
+| `preferLocal` | `true`  | Prefer locally installed binaries when looking for a binary to execute. <br> If you `npm install prettier`, you can then call `prettier` directly              |
+| `appendFile`  | `true`  | Append file saved to each command. <br> If you use `prettier --write` and save the file `/dir/savedfile.js`, it will call `prettier --write /dir/savedfile.js` |
 
 ## Variables
 
 Considering:
 
 - File Saved: `lib/file.js`
-- Config Found: `/Users/username/project/atom-save-hooks.config.js`
+- Config Found: `/Users/username/project/on-save.config.js`
 
 | Variable      | Value                                 | Description                |
 | ------------- | ------------------------------------- | -------------------------- |

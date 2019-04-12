@@ -1,7 +1,7 @@
 module.exports = {
   '*.js': [
     {
-      cmd: ['prettier --fix', 'import-sort --write'],
+      cmd: ['import-sort --write', 'prettier --write'],
       showOutput: true,
     },
     {
@@ -14,8 +14,7 @@ module.exports = {
   '*': [
     {
       // Variables
-      cmd:
-        'echo {name} {file} {ext} {path} {dir} {root} {absolute} {absoluteDir}',
+      cmd: 'echo {name} {file} {ext} {path} {dir} {root} {absolute} {absoluteDir}',
       appendFile: false,
       showOutput: true,
     },
