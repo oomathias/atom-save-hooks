@@ -79,7 +79,7 @@
     "debug": "^4.1.1",
     "execa": "^1.0.0",
     "lodash.debounce": "^4.0.8",
-    "micromatch": "^4.0.1",
+    "micromatch": "^4.0.2",
     "string-argv": "^0.1.2"
   },
   "devDependencies": {
