@@ -1,7 +1,7 @@
 {
   "name": "save-hooks",
   "main": "./lib/index.js",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "author": "Mathias Beugnon <mathias@beugnon.fr>",
   "description": "Atom save hooks made easy",
   "repository": "https://github.com/oomathias/atom-save-hooks",
@@ -69,25 +69,29 @@
     "**/*.js": [
       "import-sort --write"
     ],
-    "**/*.xx{{c,le,sc}ss,g?(raph)ql,htm?(l),js?(on|on5|onl|x|s),md?(x|wn),m?(ark)down,mkdn,ts?(x),vue,y?(a)ml}": [
+    "**/*.{{c,le,sc}ss,g?(raph)ql,htm?(l),js?(on|on5|onl|x|s),md?(x|wn),m?(ark)down,mkdn,ts?(x),vue,y?(a)ml}": [
       "prettier --write"
     ]
   },
   "dependencies": {
-    "atom-package-deps": "^5.0.0",
-    "cosmiconfig": "^5.2.0",
+    "atom-package-deps": "^5.1.0",
+    "cosmiconfig": "^5.0.0",
     "debug": "^4.1.1",
-    "execa": "^1.0.0",
+    "execa": "^4.0.0",
     "lodash.debounce": "^4.0.8",
-    "micromatch": "^4.0.1",
-    "string-argv": "^0.1.2"
+    "micromatch": "^4.0.2",
+    "string-argv": "^0.3.1"
   },
   "devDependencies": {
-    "husky": "^1.3.1",
+    "@babel/cli": "^7.8.3",
+    "@babel/core": "^7.8.3",
+    "@babel/node": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "husky": "^4.0.10",
     "import-sort-cli": "^6.0.0",
     "import-sort-parser-babylon": "^6.0.0",
     "import-sort-style-renke": "^6.0.0",
-    "prettier": "^1.16.4",
-    "pretty-quick": "^1.10.0"
+    "prettier": "^1.19.1",
+    "pretty-quick": "^2.0.1"
   }
 }
