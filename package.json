@@ -69,13 +69,13 @@
     "**/*.js": [
       "import-sort --write"
     ],
-    "**/*.xx{{c,le,sc}ss,g?(raph)ql,htm?(l),js?(on|on5|onl|x|s),md?(x|wn),m?(ark)down,mkdn,ts?(x),vue,y?(a)ml}": [
+    "**/*.{{c,le,sc}ss,g?(raph)ql,htm?(l),js?(on|on5|onl|x|s),md?(x|wn),m?(ark)down,mkdn,ts?(x),vue,y?(a)ml}": [
       "prettier --write"
     ]
   },
   "dependencies": {
     "atom-package-deps": "^5.1.0",
-    "cosmiconfig": "^6.0.0",
+    "cosmiconfig": "^5.0.0",
     "debug": "^4.1.1",
     "execa": "^4.0.0",
     "lodash.debounce": "^4.0.8",
