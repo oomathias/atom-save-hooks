@@ -77,7 +77,7 @@
     "atom-package-deps": "^5.1.0",
     "cosmiconfig": "^5.0.0",
     "debug": "^4.1.1",
-    "execa": "^4.0.0",
+    "execa": "^4.0.1",
     "lodash.debounce": "^4.0.8",
     "micromatch": "^4.0.2",
     "string-argv": "^0.3.1"
