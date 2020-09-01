@@ -83,10 +83,10 @@
     "string-argv": "^0.3.1"
   },
   "devDependencies": {
-    "@babel/cli": "^7.8.3",
-    "@babel/core": "^7.8.3",
+    "@babel/cli": "^7.11.5",
+    "@babel/core": "^7.11.5",
     "@babel/node": "^7.8.3",
-    "@babel/preset-env": "^7.8.3",
+    "@babel/preset-env": "^7.11.5",
     "husky": "^4.0.10",
     "import-sort-cli": "^6.0.0",
     "import-sort-parser-babylon": "^6.0.0",
