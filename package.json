@@ -87,7 +87,7 @@
     "@babel/core": "^7.8.3",
     "@babel/node": "^7.8.3",
     "@babel/preset-env": "^7.8.3",
-    "husky": "^4.0.10",
+    "husky": "^4.3.8",
     "import-sort-cli": "^6.0.0",
     "import-sort-parser-babylon": "^6.0.0",
     "import-sort-style-renke": "^6.0.0",
