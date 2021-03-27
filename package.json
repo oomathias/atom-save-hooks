@@ -84,8 +84,8 @@
   },
   "devDependencies": {
     "@babel/cli": "^7.8.3",
-    "@babel/core": "^7.8.3",
-    "@babel/node": "^7.8.3",
+    "@babel/core": "^7.13.13",
+    "@babel/node": "^7.13.13",
     "@babel/preset-env": "^7.8.3",
     "husky": "^4.0.10",
     "import-sort-cli": "^6.0.0",
