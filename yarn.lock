@@ -1057,13 +1057,10 @@ atob@^2.1.1:
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
   integrity sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
 
-atom-package-deps@^5.1.0:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/atom-package-deps/-/atom-package-deps-5.1.0.tgz#be493f783d9c0a8b5b7f2c4ab0ddcc778035f878"
-  integrity sha512-RGktH8NSFBJ5rdwuta3M7DbFdDr1EgrXo7uW7DQR/+lWJZcrfH2yxobnSdb/g1JM1tTvLyRYmZYOeRJGqQ9UGw==
-  dependencies:
-    sb-fs "^4.0.0"
-    semver "^6.0.0"
+atom-package-deps@7.2.3:
+  version "7.2.3"
+  resolved "https://registry.yarnpkg.com/atom-package-deps/-/atom-package-deps-7.2.3.tgz#41345f551a197eb3a242217088a6cafa47f9fa68"
+  integrity sha512-Z1FHJS2c2xBN3wQVniG7jXDyE4mUjZlHA0tfIkCND9U/fHaZyBJPno4/jD8PtYUnhlymaHRbCsgxCU3QuKjqfQ==
 
 babel-plugin-dynamic-import-node@^2.3.0:
   version "2.3.0"
@@ -2427,11 +2424,6 @@ is-symbol@^1.0.2:
   dependencies:
     has-symbols "^1.0.1"
 
-is-utf8@^0.2.1:
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/is-utf8/-/is-utf8-0.2.1.tgz#4b0da1442104d1b336340e80797e865cf39f7d72"
-  integrity sha1-Sw2hRCEE0bM2NA6AeX6GXPOffXI=
-
 is-windows@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/is-windows/-/is-windows-1.0.2.tgz#d1850eb9791ecd18e6182ce12a30f396634bb19d"
@@ -3362,13 +3354,6 @@ safe-regex@^1.1.0:
   resolved "https://registry.yarnpkg.com/safer-buffer/-/safer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
   integrity sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==
 
-sb-fs@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/sb-fs/-/sb-fs-4.0.0.tgz#b84ca0045f09d4643304113d4e0543b508a56f73"
-  integrity sha512-UjjIHC4uahPWvKYqgknvFCCJ11S0oDahz+nsmyTCAmARKto31aoE+Lu7GGGK0nogengJEKGzFdh46ho5+IL88Q==
-  dependencies:
-    strip-bom-buf "^1.0.0"
-
 semver-compare@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/semver-compare/-/semver-compare-1.0.0.tgz#0dee216a1c941ab37e9efb1788f6afc5ff5537fc"
@@ -3389,7 +3374,7 @@ semver@^5.7.0:
   resolved "https://registry.yarnpkg.com/semver/-/semver-5.7.1.tgz#a954f931aeba508d307bbf069eff0c01c96116f7"
   integrity sha512-sauaDf/PZdVgrLTNYHRtpXa1iRiKcaebiKQ1BJdpQlWH2lCvexQdX55snPFyK7QzpudqbCI0qXFfOasHdyNDGQ==
 
-semver@^6.0.0, semver@^6.3.0:
+semver@^6.3.0:
   version "6.3.0"
   resolved "https://registry.yarnpkg.com/semver/-/semver-6.3.0.tgz#ee0a64c8af5e8ceea67687b133761e1becbd1d3d"
   integrity sha512-b39TBaTSfV6yBrapU89p5fKekE2m/NwnDocOVruQFS1/veMgdzuPcnOM34M6CwxW8jH/lxEa5rBoDeUwu5HHTw==
@@ -3625,13 +3610,6 @@ strip-ansi@^5.0.0, strip-ansi@^5.1.0:
   integrity sha512-DuRs1gKbBqsMKIZlrffwlug8MHkcnpjs5VPmL1PAh+mA30U0DTotfDZ0d2UUsXpPmPmMMJ6W773MaA3J+lbiWA==
   dependencies:
     ansi-regex "^4.1.0"
-
-strip-bom-buf@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/strip-bom-buf/-/strip-bom-buf-1.0.0.tgz#1cb45aaf57530f4caf86c7f75179d2c9a51dd572"
-  integrity sha1-HLRar1dTD0yvhsf3UXnSyaUd1XI=
-  dependencies:
-    is-utf8 "^0.2.1"
 
 strip-eof@^1.0.0:
   version "1.0.0"
